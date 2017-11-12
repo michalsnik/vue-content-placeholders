@@ -9,14 +9,14 @@
 
 ---
 
-# :cd: Installation
+## :cd: Installation
 
 * via npm: `npm install vue-content-placeholders --save`
 * via yarn: `yarn add vue-content-placeholders`
 
-## Default import
+## :rocket: Usage
 
-Install all the components:
+Include plugin in your `main.js` file.
 
 ```javascript
 import Vue from 'vue'
@@ -25,51 +25,9 @@ import VueContentPlaceholders from 'vue-content-placeholders'
 Vue.use(VueContentPlaceholders)
 ```
 
-Use specific components:
+> ⚠️ A css file is included when importing the package. You may have to setup your bundler to embed the css in your page.
 
-```javascript
-import Vue from 'vue'
-import { ContentPlaceholdersText } from 'vue-content-placeholders'
-
-Vue.component('ContentPlaceholdersText', ContentPlaceholdersText)
-```
-
-**⚠️ A css file is included when importing the package. You may have to setup your bundler to embed the css in your page.**
-
-## Distribution import
-
-Install all the components:
-
-```javascript
-import 'vue-content-placeholders/dist/vue-content-placeholders.css'
-import VueContentPlaceholders from 'vue-content-placeholders/dist/vue-content-placeholders.common'
-
-Vue.use(VueContentPlaceholders)
-```
-
-Use specific components:
-
-```javascript
-import 'vue-content-placeholders/dist/vue-content-placeholders.css'
-import { ContentPlaceholdersText } from 'vue-content-placeholders/dist/vue-content-placeholders.common'
-
-Vue.component('ContentPlaceholdersText', ContentPlaceholdersText)
-```
-
-**⚠️ You may have to setup your bundler to embed the css file in your page.**
-
-## Browser
-
-```html
-<link rel="stylesheet" href="vue-content-placeholders/dist/vue-content-placeholders.css"/>
-
-<script src="vue.js"></script>
-<script src="vue-content-placeholders/dist/vue-content-placeholders.browser.js"></script>
-```
-
----
-
-# :rocket: Usage
+### Examples:
 
 ```html
 <content-placeholders>
