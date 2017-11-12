@@ -1,6 +1,9 @@
 {
   "presets": [
-    ["es2015", { "modules": false }],
-    "stage-0"
+    ["@babel/env", {
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions"]
+      }
+    }]
   ]
 }
