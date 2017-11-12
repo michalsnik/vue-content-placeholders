@@ -1,9 +1,11 @@
 # vue-content-placeholders
 
-[![npm](https://img.shields.io/npm/v/vue-content-placeholders.svg)
+![npm](https://img.shields.io/npm/v/vue-content-placeholders.svg)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
 > Vue addon for rendering fake content while data is fetching to provide better UX and lower bounce rate.
+
+![example](https://i.imgur.com/JQlFjsS.gif)
 
 ---
 
