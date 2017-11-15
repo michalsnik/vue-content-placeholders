@@ -66,6 +66,21 @@ Vue.use(VueContentPlaceholders)
 
 * `<content-placeholders-img />`
 
+### Use in .vue files versus .html files
+
+If you use the component inside .html files (or it is used inside templated html frameworks), you need to fully close the component tags, just like in the following example:
+
+```
+<content-placeholders :rounded="true">
+    <content-placeholders-img></content-placeholders-img>
+    <content-placeholders-heading :img="true"></content-placeholders-heading>
+    <content-placeholders-text></content-placeholders-text>
+</content-placeholders>
+```
+
+Using self-closing tags within .vue files is fine.
+
+
 ---
 
 ## 🔓 License
