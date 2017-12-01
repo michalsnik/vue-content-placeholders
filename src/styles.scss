@@ -65,6 +65,7 @@ $vue-content-placeholders-spacing: 10px !default;
 .vue-content-placeholders-heading {
   @include vue-content-placeholders-spacing;
   display: flex;
+  flex: 1;
 
   &__img {
     @include vue-content-placeholders;
