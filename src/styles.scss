@@ -23,7 +23,12 @@ $vue-content-placeholders-spacing: 10px !default;
 // Mixins
 @mixin vue-content-placeholders {
   position: relative;
-  overflow: hidden;
+  overflow: hidden;  /* Other browsers */
+  overflow: overlay; /* Chrome */
+  &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+  }
   height: $vue-content-placeholders-line-height;
   background: $vue-content-placeholders-secondary-color;
 
