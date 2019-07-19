@@ -23,9 +23,7 @@ $vue-content-placeholders-spacing: 10px !default;
 // Mixins
 @mixin vue-content-placeholders {
   position: relative;
-  overflow: hidden;  /* Other browser*/
-  overflow: overlay; /* Chrome */
-  z-index: 1;
+  overflow: hidden;
   height: $vue-content-placeholders-line-height;
   background: $vue-content-placeholders-secondary-color;
 
