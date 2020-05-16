@@ -31,7 +31,7 @@ Vue.use(VueContentPlaceholders)
 
 ```html
 <content-placeholders>
-  <content-placeholders-heading :img="true" />
+  <content-placeholders-heading img />
   <content-placeholders-text :lines="3" />
 </content-placeholders>
 ```
@@ -39,7 +39,7 @@ Vue.use(VueContentPlaceholders)
 ![rendered example](https://i.imgur.com/LWfqxUe.png)
 
 ```html
-<content-placeholders :rounded="true">
+<content-placeholders rounded>
   <content-placeholders-img />
   <content-placeholders-heading />
 </content-placeholders>
