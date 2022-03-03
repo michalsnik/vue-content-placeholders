@@ -3,7 +3,7 @@
     <div v-if="img" :class="`${className}__img`" />
     <div :class="`${className}__content`">
       <div :class="`${className}__title`" />
-      <div :class="`${className}__subtitle`" />
+      <div v-if="showSubtitle" :class="`${className}__subtitle`" />
     </div>
   </div>
 </template>
@@ -17,6 +17,10 @@ export default {
     }
   },
   props: {
+    showSubtitle: {
+      type: Boolean,
+      default: true,
+    },
     img: {
       type: Boolean,
       default: false,
